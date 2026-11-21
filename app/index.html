@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Neon Coastal — GTA VI Trophy Guide &amp; Tracker</title>
+<link rel="icon" href="data:,">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="masthead">
+  <div class="masthead-inner">
+    <p class="kicker">Grand Theft Auto VI &middot; PlayStation 5 &middot; Leonida</p>
+    <h1>Neon Coastal<br><span>Trophy Guide &amp; Tracker</span></h1>
+    <p class="lede">All 55 official trophies — every name and description exactly as PlayStation lists them — with a step-by-step route, a counter for every grind, and your notes saved on this device. No account, no network, no spoilers unless you ask for them.</p>
+    <div class="progress-wrap">
+      <div class="progress-numbers"><strong id="earnedCount">0</strong> of <strong>55</strong> earned <span id="platinumState" class="platinum-state">Platinum locked</span></div>
+      <div class="progress-bar"><div id="progressFill" class="progress-fill" style="width:0%"></div></div>
+      <p class="grade-line" id="gradeLine">Platinum 0/1 &middot; Gold 0/2 &middot; Silver 0/6 &middot; Bronze 0/46</p>
+    </div>
+  </div>
+</header>
+
+<section class="audit" aria-label="Guide audit">
+  <div class="audit-card"><span class="audit-num" id="auditCoverage">55/55</span><span class="audit-label">Coverage — official names verified</span></div>
+  <div class="audit-card"><span class="audit-num" id="auditCitations">122</span><span class="audit-label">Citations — sourced steps</span></div>
+  <div class="audit-card"><span class="audit-num" id="auditTracker">20</span><span class="audit-label">Tracker — trophies with counters</span></div>
+  <div class="audit-card"><span class="audit-num">7</span><span class="audit-label">Roadmap — stages to Platinum</span></div>
+  <div class="audit-card"><span class="audit-num">0</span><span class="audit-label">Polish — external requests, errors</span></div>
+</section>
+
+<nav class="tabs" aria-label="Sections">
+  <button type="button" class="tab active" data-tab="guide">Guide</button>
+  <button type="button" class="tab" data-tab="roadmap">Roadmap</button>
+  <button type="button" class="tab" data-tab="sources">Sources</button>
+</nav>
+
+<main>
+  <section id="tab-guide" class="tab-panel">
+    <div class="controls">
+      <input id="search" type="search" placeholder="Search a trophy or a mission…" aria-label="Search trophies">
+      <select id="gradeFilter" aria-label="Filter by grade">
+        <option value="all">All grades</option>
+        <option value="platinum">Platinum</option>
+        <option value="gold">Gold</option>
+        <option value="silver">Silver</option>
+        <option value="bronze">Bronze</option>
+      </select>
+      <select id="statusFilter" aria-label="Filter by status">
+        <option value="all">All trophies</option>
+        <option value="earned">Earned only</option>
+        <option value="todo">Not earned yet</option>
+        <option value="hidden">Hidden only</option>
+        <option value="visible">Visible only</option>
+      </select>
+      <label class="shield-toggle"><input id="spoilerShield" type="checkbox" checked> Spoiler shield — hide hidden trophies</label>
+      <div class="data-buttons">
+        <button id="exportBtn" type="button">Export progress</button>
+        <label class="import-btn">Import progress <input id="importFile" type="file" accept="application/json"></label>
+        <button id="wipeBtn" type="button" class="danger">Wipe all progress</button>
+      </div>
+    </div>
+    <p class="result-line" id="resultLine">Showing 55 trophies</p>
+    <div id="trophyList" class="trophy-list"></div>
+  </section>
+
+  <section id="tab-roadmap" class="tab-panel hidden">
+    <h2>The road to the Platinum</h2>
+    <p class="section-intro">Roughly 200 hours from first mission to Platinum, per PowerPyx. Seven stages, in the order that wastes the least time.</p>
+    <ol class="roadmap">
+      <li><h3>Stage 1 — Play the story blind</h3><p>Chapters 1–4 and the final mission earn 13 trophies on their own. Do not chase collectibles yet; just finish the campaign and enjoy it.</p></li>
+      <li><h3>Stage 2 — The one missable spot</h3><p>Before Chapter 1 ends, meditate at its meditation spot. PowerPyx and GTABase flag Positive Mental Attitude as the only trophy that may not come back — do this one early.</p></li>
+      <li><h3>Stage 3 — Stranger strands</h3><p>Finish the stranger chains for Andy, Kenton, Billy, Randy, Tyrone and Bret, plus two more, for Strangers &amp; Freaks and five single-strand trophies.</p></li>
+      <li><h3>Stage 4 — Activities &amp; races</h3><p>Stunts (250), Shooting Range golds (42), drone races (14), 20 race wins and 50 challenges. These overlap heavily — do them in the same sessions.</p></li>
+      <li><h3>Stage 5 — Collectibles &amp; exploration</h3><p>WAiNK scans (100), card sets (3), vehicles (100), all 52 areas of Leonida and the 18 meditation spots. Pair with the money trophies below.</p></li>
+      <li><h3>Stage 6 — Crime &amp; money</h3><p>Bank vaults (5), armored truck, shop robberies with your partner, gang operations (9), laundering $250,000 and spending $100,000.</p></li>
+      <li><h3>Stage 7 — The 100% checklist</h3><p>After the story, the 35-task 100% Completion Checklist unlocks. Clear it for A Long Road, then mop up anything left. The Platinum pops last.</p></li>
+    </ol>
+  </section>
+
+  <section id="tab-sources" class="tab-panel hidden">
+    <h2>Sources</h2>
+    <p class="section-intro">Every step in this guide names its source. Source names only — no links, no tracking. List read on 21 November 2026.</p>
+    <div id="sourceTable" class="source-table"></div>
+    <div class="disagree">
+      <h3>SOURCES DISAGREE</h3>
+      <ul>
+        <li><strong>Silver / Bronze split:</strong> Push Square counts 5 Silver and 47 Bronze; PowerPyx and Insider Gaming count 6 Silver and 46 Bronze. This guide follows PowerPyx / Insider Gaming (6 Silver, 46 Bronze), which matches the Exophase list.</li>
+        <li><strong>Missable trophies:</strong> PowerPyx and GTABase flag Positive Mental Attitude as possibly missable (a Chapter 1 meditation spot). Planet GTA 6 says the question cannot be settled yet. This guide marks it missable and tells you to do it early.</li>
+        <li><strong>Time to Platinum:</strong> PowerPyx says about 200 hours; Push Square says 250–300 hours.</li>
+      </ul>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <p>Neon Coastal Trophy Guide — an unofficial fan guide. Grand Theft Auto and GTA are trademarks of Rockstar Games. Trophy names and descriptions are the official PlayStation wording as reported by Exophase, 18 November 2026, and re-checked against PSNProfiles and PowerPyx on 21 November 2026. All data is stored locally in your browser; nothing leaves this device.</p>
+</footer>
+
+<script type="module" src="app.js"></script>
+</body>
+</html>
